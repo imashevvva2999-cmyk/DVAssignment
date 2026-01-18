@@ -123,7 +123,7 @@ st.markdown("---")
 col1, col2 = st.columns(2)
 
 with col1:
-    st.subheader("📊 Mean Hourly Rentals by Hour of Day")
+    st.subheader("Mean Hourly Rentals by Hour of Day")
     mean_hour = df_filtered.groupby("hour")["count"].mean().reset_index()
     
     fig, ax = plt.subplots(figsize=(10, 5))
